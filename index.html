@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop test</title>
+    <link rel="stylesheet"  href="./css/style.css" />
+</head>
+<body>
+    <div class="page">
+        <div id="da-container">
+            <div id="da-toolbar"></div>
+            <div id="da-viewport">
+                <div id="drawArea" draggable="true">
+                </div>
+            </div>
+        </div>
+        <div id="snap-control">
+            <div class="control">
+                <fieldset>
+                    <legend>Snap to</legend>
+                    <input type="radio" name="snap" value="none" checked />None
+                    <input type="radio" name="snap" value="tile" />Tile
+                    <input type="radio" name="snap" value="grid" />Grid
+                </fieldset>
+            </div>
+        </div>
+        <div id="snap-control">
+            <div class="control">
+                <fieldset>
+                    <legend>Align snap</legend>
+                    <input type="radio" name="snapalign" value="auto" checked />Auto
+                    <input type="radio" name="snapalign" value="topleft" />Top Left
+                    <input type="radio" name="snapalign" value="topright" />Top Right
+                    <input type="radio" name="snapalign" value="bottomleft" />Bottom Left
+                    <input type="radio" name="snapalign" value="bottomright" />Bottom Right
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <script src="./js/utils.js"></script>
+    <script src="./js/DragAndDrop.js"></script>
+    <script src="./js/Draggable.js"></script>
+    <script src="./js/Dropable.js"></script>
+    <script src="./js/ImagePreloader.js"></script>
+    <script src="./js/Tile.js"></script>
+    <script src="./js/DockedTile.js"></script>
+    <script src="./js/DrawnTile.js"></script>
+    <script src="./js/DrawLayer.js"></script>
+    <script src="./js/DrawArea.js"></script>
+    <script src="./js/BlockSelector.js"></script>    
+    <script src="./js/Editor.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

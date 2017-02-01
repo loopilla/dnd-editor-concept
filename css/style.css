@@ -1,0 +1,102 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+#da-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: black;    
+}
+
+#da-toolbar {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    float: left;
+    background-color: rgba(255, 255, 255, .5);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#da-viewport {
+    position: relative;
+    width: calc(100% - 150px);
+    height: 100%;
+    float: left;
+    background-color: #434343;
+    background-image:linear-gradient(#434343, #282828);
+}
+
+.drawLayer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#drawArea {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+
+    background-color: #cfc; /* any color you want */
+  
+    background-image:
+        -webkit-linear-gradient(rgba(200,200,200, .7) 1px, transparent 1px),
+        -webkit-linear-gradient(0deg, rgba(200,200,200, .7) 1px, transparent 1px),
+        -webkit-linear-gradient(rgba(200,200,200,.3) 1px, transparent 1px),
+        -webkit-linear-gradient(0deg, rgba(200,200,200,.3) 1px, transparent 1px);
+
+    background-image: 
+        -webkit-linear-gradient(rgba(200,200,200, .7) 1px, transparent 1px),
+        -webkit-linear-gradient(0deg, rgba(200,200,200, .7) 1px, transparent 1px),
+        -moz-linear-gradient(rgba(200,200,200,.12) 1px,transparent 1px),
+        -moz-linear-gradient(0deg,rgba(200,200,200,.12) 1px,transparent 1px);
+    
+    background-image: 
+        -webkit-linear-gradient(rgba(200,200,200, .7) 1px, transparent 1px),
+        -webkit-linear-gradient(0deg, rgba(200,200,200, .7) 1px, transparent 1px),
+        -ms-linear-gradient(rgba(200,200,200,.12) 1px,transparent 1px),
+        -ms-linear-gradient(0deg,rgba(200,200,200,.12) 1px,transparent 1px);
+    
+    background-size: 
+        90px 60px,
+        90px 60px,    
+        10px 10px,
+        10px 10px;
+}
+
+.block {
+    position: absolute;
+    float: left;
+}
+
+.default-background {
+    background-color: orangered;
+}
+
+.block-select {
+    position: relative;
+    width: 90px;
+    height: 60px;
+    margin: 10px auto;
+}
+
+.validtarget {
+    background-color: aqua;
+}
+
+.active {
+    opacity: 0.3;
+}
